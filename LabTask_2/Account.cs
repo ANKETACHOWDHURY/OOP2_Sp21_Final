@@ -9,49 +9,80 @@ namespace LabTask_2
     class Account
     {
         public string AccName { get; set; }
-        public string AccNo { get; }
+        public string AccNo { get; } 
         public double Balance { get; set; }
 
-        public Account() { }
+        public int totalNumberOfTransaction { get; set; }
+
+        Transaction[] listOfTransaction;
+
+        public Account()
+        {
+            listOfTransaction = new Transaction[10];
+
+        }
+
         public Account(string accName, string accNo, double balance)
         {
             AccName = accName;
             AccNo = accNo;
             Balance = balance;
+            listOfTransaction = new Transaction[10];
         }
+
+        public void AddTransaction(Transaction transactions)
+        {
+
+            this.listOfTransaction[totalNumberOfTransaction++] = transactions;
+
+        }
+
+        public void ShowAllTransaction()
+        {
+            for (int i = 0; i < totalNumberOfTransaction; i++)
+            {
+                listOfTransaction[i].ShowInfo();
+            }
+        }
+
         public void Deposit(double amount)
         {
             Balance += amount;
+            Console.WriteLine("Your Account has been credited by {0}", amount);
         }
-        public void ShowInfo()
-        {
-            Console.WriteLine("AccName: " + AccName);
-            Console.WriteLine("AccNo: " + AccNo);
-            Console.WriteLine("Balance: " + Balance);
-        }
+
         virtual public void Withdraw(double amount)
         {
-
             if (amount <= Balance)
             {
-                Balance = Balance - amount;
-                Console.WriteLine("Your acc has been debited by {0} to self", amount);
+                Balance -= amount;
+                Console.WriteLine("Your Account has been debited by {0} to self ", amount);
             }
             else
             {
-                Console.WriteLine("Insaficient Balance");
+                Console.WriteLine("Insufficient Balance");
             }
         }
-        virtual public void Transfer(Account acc, double amount)
+
+        virtual public void Transfer(Account acc, int amount)
         {
             if (amount <= Balance)
             {
                 this.Balance -= amount;
                 acc.Balance += amount;
-                Console.WriteLine("Youracc has been debited {0} to {1}({2})", amount, acc.AccName, acc.AccNo);
-            }
+                Console.WriteLine("Your Account has been debitated by {0} to {1} ({2}) ", amount, acc.AccName, acc.AccNo);
+                Transaction t = new Transaction(this, acc, amount, "Business Purporses");
+                this.AddTransaction(t);
+                acc.AddTransaction(t);
 
+            }
         }
 
+        public void ShowInfo()
+        {
+            Console.WriteLine("Acc Name: " + AccName);
+            Console.WriteLine("Acc No: " + AccNo);
+            Console.WriteLine("Balance: " + Balance);
+        }
     }
 }

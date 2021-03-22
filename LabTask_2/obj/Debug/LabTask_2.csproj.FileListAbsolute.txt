@@ -1,0 +1,7 @@
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\bin\Debug\LabTask_2.exe.config
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\bin\Debug\LabTask_2.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\bin\Debug\LabTask_2.pdb
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\obj\Debug\LabTask_2.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\obj\Debug\LabTask_2.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\obj\Debug\LabTask_2.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\LabTask_2\obj\Debug\LabTask_2.pdb

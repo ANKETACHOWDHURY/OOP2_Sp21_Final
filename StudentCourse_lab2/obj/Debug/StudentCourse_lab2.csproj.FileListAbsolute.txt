@@ -1,0 +1,7 @@
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\bin\Debug\StudentCourse_lab2.exe.config
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\bin\Debug\StudentCourse_lab2.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\bin\Debug\StudentCourse_lab2.pdb
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\obj\Debug\StudentCourse_lab2.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\obj\Debug\StudentCourse_lab2.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\obj\Debug\StudentCourse_lab2.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\StudentCourse_lab2\obj\Debug\StudentCourse_lab2.pdb
