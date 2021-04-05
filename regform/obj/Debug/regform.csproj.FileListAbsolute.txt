@@ -1,0 +1,10 @@
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\bin\Debug\regform.exe.config
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\bin\Debug\regform.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\bin\Debug\regform.pdb
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.Form1.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.Properties.Resources.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.csproj.GenerateResource.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\regform\obj\Debug\regform.pdb
