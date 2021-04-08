@@ -31,51 +31,52 @@ namespace regform
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmMonth = new System.Windows.Forms.ComboBox();
+            this.cmDay = new System.Windows.Forms.ComboBox();
+            this.cmYear = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmGender = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtReTypeEmail = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtReTypePassword = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmSecurityQues = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtSecurityAns = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cmState = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtZip = new System.Windows.Forms.TextBox();
+            this.txtZipOptional = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmMobile = new System.Windows.Forms.ComboBox();
+            this.buttonSubmit = new System.Windows.Forms.Button();
+            this.rtOutput = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -98,19 +99,20 @@ namespace regform
             this.label2.TabIndex = 1;
             this.label2.Text = "First Name:";
             // 
-            // textBox1
+            // txtFirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(264, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtFirstName.Location = new System.Drawing.Point(264, 72);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(251, 22);
+            this.txtFirstName.TabIndex = 2;
+            this.txtFirstName.Click += new System.EventHandler(this.FirstName);
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(264, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 22);
-            this.textBox2.TabIndex = 4;
+            this.txtLastName.Location = new System.Drawing.Point(264, 100);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(251, 22);
+            this.txtLastName.TabIndex = 4;
             // 
             // label3
             // 
@@ -141,25 +143,25 @@ namespace regform
             this.label5.TabIndex = 6;
             this.label5.Text = "Date Of Birth:";
             // 
-            // comboBox1
+            // cmMonth
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmMonth.FormattingEnabled = true;
+            this.cmMonth.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
             "April"});
-            this.comboBox1.Location = new System.Drawing.Point(264, 135);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 24);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.Text = "Month";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmMonth.Location = new System.Drawing.Point(264, 135);
+            this.cmMonth.Name = "cmMonth";
+            this.cmMonth.Size = new System.Drawing.Size(75, 24);
+            this.cmMonth.TabIndex = 7;
+            this.cmMonth.Text = "Month";
+            this.cmMonth.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cmDay
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmDay.FormattingEnabled = true;
+            this.cmDay.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -170,29 +172,29 @@ namespace regform
             "8",
             "9",
             "10"});
-            this.comboBox2.Location = new System.Drawing.Point(369, 138);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(52, 24);
-            this.comboBox2.TabIndex = 8;
-            this.comboBox2.Text = "Day";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cmDay.Location = new System.Drawing.Point(369, 138);
+            this.cmDay.Name = "cmDay";
+            this.cmDay.Size = new System.Drawing.Size(52, 24);
+            this.cmDay.TabIndex = 8;
+            this.cmDay.Text = "Day";
+            this.cmDay.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // comboBox3
+            // cmYear
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmYear.FormattingEnabled = true;
+            this.cmYear.Items.AddRange(new object[] {
             "1995",
             "1996",
             "1997",
             "1998",
             "1999",
             "2000"});
-            this.comboBox3.Location = new System.Drawing.Point(458, 135);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(57, 24);
-            this.comboBox3.TabIndex = 9;
-            this.comboBox3.Text = "Year";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.cmYear.Location = new System.Drawing.Point(458, 135);
+            this.cmYear.Name = "cmYear";
+            this.cmYear.Size = new System.Drawing.Size(57, 24);
+            this.cmYear.TabIndex = 9;
+            this.cmYear.Text = "Year";
+            this.cmYear.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -204,20 +206,20 @@ namespace regform
             this.label6.TabIndex = 10;
             this.label6.Text = "Gender:";
             // 
-            // comboBox4
+            // cmGender
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cmGender.FormattingEnabled = true;
+            this.cmGender.Items.AddRange(new object[] {
             "Male ",
             "Female",
             "Others"});
-            this.comboBox4.Location = new System.Drawing.Point(264, 173);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(134, 24);
-            this.comboBox4.TabIndex = 11;
-            this.comboBox4.Tag = "";
-            this.comboBox4.Text = "Choose a gender";
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            this.cmGender.Location = new System.Drawing.Point(264, 173);
+            this.cmGender.Name = "cmGender";
+            this.cmGender.Size = new System.Drawing.Size(134, 24);
+            this.cmGender.TabIndex = 11;
+            this.cmGender.Tag = "";
+            this.cmGender.Text = "Choose a gender";
+            this.cmGender.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -275,12 +277,12 @@ namespace regform
             this.label10.TabIndex = 15;
             this.label10.Text = "(Your email address will be your username)";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(264, 273);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(251, 22);
-            this.textBox4.TabIndex = 14;
+            this.txtEmail.Location = new System.Drawing.Point(264, 273);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(251, 22);
+            this.txtEmail.TabIndex = 14;
             // 
             // label12
             // 
@@ -302,12 +304,12 @@ namespace regform
             this.label13.TabIndex = 16;
             this.label13.Text = "Re-Type Email:";
             // 
-            // textBox5
+            // txtReTypeEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(264, 325);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(251, 22);
-            this.textBox5.TabIndex = 17;
+            this.txtReTypeEmail.Location = new System.Drawing.Point(264, 325);
+            this.txtReTypeEmail.Name = "txtReTypeEmail";
+            this.txtReTypeEmail.Size = new System.Drawing.Size(251, 22);
+            this.txtReTypeEmail.TabIndex = 17;
             // 
             // label14
             // 
@@ -319,12 +321,13 @@ namespace regform
             this.label14.TabIndex = 18;
             this.label14.Text = "Password:";
             // 
-            // textBox6
+            // txtPassword
             // 
-            this.textBox6.Location = new System.Drawing.Point(264, 365);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(251, 22);
-            this.textBox6.TabIndex = 19;
+            this.txtPassword.Location = new System.Drawing.Point(264, 365);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(251, 22);
+            this.txtPassword.TabIndex = 19;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label15
             // 
@@ -346,13 +349,13 @@ namespace regform
             this.label16.TabIndex = 21;
             this.label16.Text = "Re-Type Password:";
             // 
-            // textBox7
+            // txtReTypePassword
             // 
-            this.textBox7.Location = new System.Drawing.Point(264, 424);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(251, 22);
-            this.textBox7.TabIndex = 22;
-            this.textBox7.UseSystemPasswordChar = true;
+            this.txtReTypePassword.Location = new System.Drawing.Point(264, 424);
+            this.txtReTypePassword.Name = "txtReTypePassword";
+            this.txtReTypePassword.Size = new System.Drawing.Size(251, 22);
+            this.txtReTypePassword.TabIndex = 22;
+            this.txtReTypePassword.UseSystemPasswordChar = true;
             // 
             // label17
             // 
@@ -364,14 +367,17 @@ namespace regform
             this.label17.TabIndex = 23;
             this.label17.Text = "Security Question:";
             // 
-            // comboBox5
+            // cmSecurityQues
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(264, 455);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(251, 24);
-            this.comboBox5.TabIndex = 24;
-            this.comboBox5.Text = "Choose a security question";
+            this.cmSecurityQues.FormattingEnabled = true;
+            this.cmSecurityQues.Items.AddRange(new object[] {
+            "How are yoy?",
+            "What is your Name?"});
+            this.cmSecurityQues.Location = new System.Drawing.Point(264, 455);
+            this.cmSecurityQues.Name = "cmSecurityQues";
+            this.cmSecurityQues.Size = new System.Drawing.Size(251, 24);
+            this.cmSecurityQues.TabIndex = 24;
+            this.cmSecurityQues.Text = "Choose a security question";
             // 
             // label18
             // 
@@ -383,12 +389,12 @@ namespace regform
             this.label18.TabIndex = 25;
             this.label18.Text = "Security Answer:";
             // 
-            // textBox8
+            // txtSecurityAns
             // 
-            this.textBox8.Location = new System.Drawing.Point(264, 492);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(251, 22);
-            this.textBox8.TabIndex = 26;
+            this.txtSecurityAns.Location = new System.Drawing.Point(264, 492);
+            this.txtSecurityAns.Name = "txtSecurityAns";
+            this.txtSecurityAns.Size = new System.Drawing.Size(251, 22);
+            this.txtSecurityAns.TabIndex = 26;
             // 
             // label19
             // 
@@ -416,23 +422,23 @@ namespace regform
             this.label21.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(110, 583);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(74, 23);
+            this.label21.Size = new System.Drawing.Size(85, 23);
             this.label21.TabIndex = 29;
-            this.label21.Text = "Adress:";
+            this.label21.Text = "Address:";
             // 
-            // textBox9
+            // txtAddress
             // 
-            this.textBox9.Location = new System.Drawing.Point(264, 586);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(251, 22);
-            this.textBox9.TabIndex = 30;
+            this.txtAddress.Location = new System.Drawing.Point(264, 586);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(251, 22);
+            this.txtAddress.TabIndex = 30;
             // 
-            // textBox10
+            // txtCity
             // 
-            this.textBox10.Location = new System.Drawing.Point(264, 622);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(251, 22);
-            this.textBox10.TabIndex = 32;
+            this.txtCity.Location = new System.Drawing.Point(264, 622);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(251, 22);
+            this.txtCity.TabIndex = 32;
             // 
             // label22
             // 
@@ -454,17 +460,17 @@ namespace regform
             this.label23.TabIndex = 33;
             this.label23.Text = "State:";
             // 
-            // comboBox6
+            // cmState
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cmState.FormattingEnabled = true;
+            this.cmState.Items.AddRange(new object[] {
             "USA",
             "UK"});
-            this.comboBox6.Location = new System.Drawing.Point(264, 659);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(251, 24);
-            this.comboBox6.TabIndex = 34;
-            this.comboBox6.Text = "Choose a state";
+            this.cmState.Location = new System.Drawing.Point(264, 659);
+            this.cmState.Name = "cmState";
+            this.cmState.Size = new System.Drawing.Size(251, 24);
+            this.cmState.TabIndex = 34;
+            this.cmState.Text = "Choose a state";
             // 
             // label24
             // 
@@ -476,21 +482,21 @@ namespace regform
             this.label24.TabIndex = 35;
             this.label24.Text = "Zip Code:";
             // 
-            // textBox11
+            // txtZip
             // 
-            this.textBox11.Location = new System.Drawing.Point(264, 698);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 22);
-            this.textBox11.TabIndex = 36;
+            this.txtZip.Location = new System.Drawing.Point(264, 698);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.Size = new System.Drawing.Size(100, 22);
+            this.txtZip.TabIndex = 36;
             // 
-            // textBox12
+            // txtZipOptional
             // 
-            this.textBox12.ForeColor = System.Drawing.Color.Gray;
-            this.textBox12.Location = new System.Drawing.Point(381, 698);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 22);
-            this.textBox12.TabIndex = 37;
-            this.textBox12.Text = "Optional";
+            this.txtZipOptional.ForeColor = System.Drawing.Color.Gray;
+            this.txtZipOptional.Location = new System.Drawing.Point(381, 698);
+            this.txtZipOptional.Name = "txtZipOptional";
+            this.txtZipOptional.Size = new System.Drawing.Size(100, 22);
+            this.txtZipOptional.TabIndex = 37;
+            this.txtZipOptional.Text = "Optional";
             // 
             // label25
             // 
@@ -502,12 +508,12 @@ namespace regform
             this.label25.TabIndex = 38;
             this.label25.Text = "Phone:";
             // 
-            // textBox13
+            // txtPhone
             // 
-            this.textBox13.Location = new System.Drawing.Point(264, 739);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(157, 22);
-            this.textBox13.TabIndex = 39;
+            this.txtPhone.Location = new System.Drawing.Point(264, 739);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(157, 22);
+            this.txtPhone.TabIndex = 39;
             // 
             // label26
             // 
@@ -518,75 +524,90 @@ namespace regform
             this.label26.TabIndex = 40;
             this.label26.Text = "No space or dashes";
             // 
-            // comboBox7
+            // cmMobile
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(449, 736);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(101, 24);
-            this.comboBox7.TabIndex = 41;
-            this.comboBox7.Text = "Mobile";
+            this.cmMobile.FormattingEnabled = true;
+            this.cmMobile.Items.AddRange(new object[] {
+            "airtel ",
+            "robi",
+            "Gp"});
+            this.cmMobile.Location = new System.Drawing.Point(449, 736);
+            this.cmMobile.Name = "cmMobile";
+            this.cmMobile.Size = new System.Drawing.Size(101, 24);
+            this.cmMobile.TabIndex = 41;
+            this.cmMobile.Text = "Mobile";
             // 
-            // button1
+            // buttonSubmit
             // 
-            this.button1.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(264, 809);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSubmit.Location = new System.Drawing.Point(264, 809);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(100, 32);
+            this.buttonSubmit.TabIndex = 42;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.SubmitCkick);
+            // 
+            // rtOutput
+            // 
+            this.rtOutput.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtOutput.Location = new System.Drawing.Point(632, 39);
+            this.rtOutput.Name = "rtOutput";
+            this.rtOutput.Size = new System.Drawing.Size(388, 519);
+            this.rtOutput.TabIndex = 43;
+            this.rtOutput.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 853);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.rtOutput);
+            this.Controls.Add(this.buttonSubmit);
+            this.Controls.Add(this.cmMobile);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtZipOptional);
+            this.Controls.Add(this.txtZip);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.cmState);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtSecurityAns);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.cmSecurityQues);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtReTypePassword);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtReTypeEmail);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cmGender);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmYear);
+            this.Controls.Add(this.cmDay);
+            this.Controls.Add(this.cmMonth);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -601,51 +622,52 @@ namespace regform
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmMonth;
+        private System.Windows.Forms.ComboBox cmDay;
+        private System.Windows.Forms.ComboBox cmYear;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmGender;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtReTypeEmail;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtReTypePassword;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmSecurityQues;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtSecurityAns;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cmState;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtZip;
+        private System.Windows.Forms.TextBox txtZipOptional;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmMobile;
+        private System.Windows.Forms.Button buttonSubmit;
+        private System.Windows.Forms.RichTextBox rtOutput;
     }
 }
 
