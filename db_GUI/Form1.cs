@@ -26,8 +26,9 @@ namespace db_GUI
             string cname = tbCName.Text;
             string ccode = tbCCode.Text;
 
-            string connString = @"Server=DESKTOP-IECT90H\SQLEXPRESS;Database=demo;Integrated Security=true"; 
-            SqlConnection conn = new SqlConnection(connString);
+            /* string connString = @"Server=DESKTOP-IECT90H\SQLEXPRESS;Database=demo;Integrated Security=true"; 
+             SqlConnection conn = new SqlConnection(connString);*/
+            var conn = Database.ConnectDB();
             try
             {
                 conn.Open();
@@ -111,8 +112,9 @@ namespace db_GUI
         //all data show in output
         List<Course> GetAllCourses()
         {
-            string connString = @"Server=DESKTOP-IECT90H\SQLEXPRESS;Database=demo;Integrated Security=true";
-            SqlConnection conn = new SqlConnection(connString);
+            /* string connString = @"Server=DESKTOP-IECT90H\SQLEXPRESS;Database=demo;Integrated Security=true";
+             SqlConnection conn = new SqlConnection(connString);*/
+            var conn = Database.ConnectDB();
             List<Course> courses = new List<Course>();
 
             try
@@ -161,6 +163,67 @@ namespace db_GUI
         {
             tbCCode.Text = "";
             tbCName.Text = "";
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //This portion for edit panel
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var conn = Database.ConnectDB();
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            int id = Int32.Parse(tbSearchCId.Text);
+            string query = "select * from courses where id = " + id;
+            SqlCommand cmd = new SqlCommand(query,conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            Course c = new Course();
+            while (reader.Read()) //using while invalid number will not show but don't give any error
+            {
+                c.Id = reader.GetInt32(reader.GetOrdinal("Id"));
+                c.CourseName = reader.GetString(reader.GetOrdinal("CourseName"));
+                c.CourseCode = reader.GetString(reader.GetOrdinal("CourseCode"));
+
+            }
+            conn.Close();
+            tbCcodeUpdate.Text = c.CourseCode;
+            tbCnameUpdate.Text = c.CourseName;
+
+        }
+
+        //This portion for value Update
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id = Int32.Parse(tbSearchCId.Text);
+            string cCode = tbCcodeUpdate.Text.Trim(); //trim fuction remove multiple white space
+            string cName = tbCnameUpdate.Text;
+
+            var conn = Database.ConnectDB();
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            string query = string.Format("update courses set CourseName='{0}',CourseCode='{1}' where id={2}", cName, cCode, id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+
+            var courses = GetAllCourses();
+            dtCourses.DataSource = courses;
+            conn.Close();
         }
     }
     
