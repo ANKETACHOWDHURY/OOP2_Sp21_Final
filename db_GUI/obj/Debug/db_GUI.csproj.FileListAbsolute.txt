@@ -1,0 +1,10 @@
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\bin\Debug\db_GUI.exe.config
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\bin\Debug\db_GUI.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\bin\Debug\db_GUI.pdb
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.Form1.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.Properties.Resources.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.csproj.GenerateResource.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\db_GUI\obj\Debug\db_GUI.pdb
