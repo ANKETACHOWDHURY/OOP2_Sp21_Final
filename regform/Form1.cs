@@ -276,6 +276,7 @@ namespace regform
             else
             {
                 rtOutput.Text=(errMsg);
+               // MessageBox.Show(errMsg);
             }
            
         }

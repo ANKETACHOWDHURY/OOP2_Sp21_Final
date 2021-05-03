@@ -1,0 +1,16 @@
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\bin\Debug\ReceptionistForm.exe.config
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\bin\Debug\ReceptionistForm.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\bin\Debug\ReceptionistForm.pdb
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.Properties.Resources.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.csproj.GenerateResource.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.exe
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.pdb
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.Login.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.Dashboard.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.AddDoctor.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.ShowAllDoctor.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.EditDoctor.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.Registration.resources
+C:\Users\Windows\Desktop\Csharp\Final\Final Lab Task\ReceptionistForm\obj\Debug\ReceptionistForm.DeleteDoctor.resources
